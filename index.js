@@ -1,9 +1,9 @@
 const app = "I don't do much."
 function destructivelyAppendKitten(name) {
-  kittens.push()
+  kittens = [...kittens,name]
 } 
 function destructivelyPrependKitten(name) {
-  kittens.unshift()
+  kittens = [name,...kittens]
 }
 function destructivelyRemoveLastKitten() {
   kittens.pop()
